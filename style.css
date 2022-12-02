@@ -49,6 +49,7 @@ a {
 }
 
 .about {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -56,6 +57,11 @@ a {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.orb-canvas {
+    position: absolute;
+    height: 100%;
 }
 
 .about__title {
