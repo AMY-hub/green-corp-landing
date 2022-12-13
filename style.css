@@ -16,14 +16,22 @@ a {
 }
 
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: transparent;
+    transition: box-shadow 300ms ease, background-color 300ms ease;
+}
+
+.header__scrolled {
+    background-color:#fff;
+    box-shadow:  0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 .header__logo {
@@ -53,7 +61,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 115px 20px;
+    padding: 200px 20px 115px 20px;
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,6 +69,9 @@ a {
 
 .orb-canvas {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     height: 100%;
 }
 
@@ -76,6 +87,7 @@ a {
 }
 
 .about__btn {
+    display: inline-block;
     font-size: 18px;
     border-radius: 20px;
     padding: 20px 25px;
@@ -198,7 +210,7 @@ a {
 
 .features__savings-box {
     margin-right: 30px;
-    background-color: #dc5e26;
+    background-color: #f46726;
     box-shadow: 0 6px 0 rgba(221, 95, 38, 0.2);
 }
 
@@ -225,7 +237,7 @@ a {
 
 .promo__right {
     padding: 160px 60px;
-    background: #dd5f26;
+    background: #f46726;
 }
 
 .promo__text {
@@ -429,6 +441,7 @@ a {
     }
 
     .about {
+        padding-top: 100px;
         flex-direction: column-reverse;
     }
 
